@@ -1,0 +1,33 @@
+.input{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  input{
+      outline: none;
+      max-width: 100%;
+
+      font-weight: 500;
+      font-size: var(--md);
+
+      color: var(--white);
+      background: transparent;
+
+      border-radius: 0.625rem;
+      border: 0.25rem solid var(--blue-900);
+
+      padding: 0.625rem;
+      margin-bottom: 0.625rem;
+
+      transition: all 0.4s;
+
+      &::placeholder{
+        color: var(--gray);
+      }
+
+      &:focus,
+      &:hover{
+        background: var(--blue-900);
+      }
+  }
+}

@@ -1,6 +1,9 @@
 import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 
+import { Footer } from '@/components/Footer'
+import { Navbar } from '@/components/Navbar'
+
 import '../styles/global.scss'
 
 const inter = Inter({
@@ -19,7 +22,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
       <body className={inter.className}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
