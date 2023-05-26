@@ -1,0 +1,46 @@
+.select{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  label{
+    margin-bottom: 0.5rem;
+  }
+
+  .content{
+    width: 22.625rem;
+    max-width: 100%;
+    position: relative;
+
+    display: flex;
+
+    select{
+      width: 22.625rem;
+      max-width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+      outline: none;
+      
+      color: var(--white);
+      background: var(--blue-900);
+      border: none;
+      border-radius: 0.625rem;
+      margin: 0 0 1rem 0;
+
+      appearance: none;
+    }
+
+    .icon{
+      position: absolute;
+      right: 0;
+      margin: 0.5rem 0.5rem;
+      width: var(--xl);
+    }
+  }
+
+
+  select:hover{
+    cursor: pointer;
+  }
+}
