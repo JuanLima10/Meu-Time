@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--white);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: var(--background);
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background: var(--gray);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--white);
+  border-radius: 0.5rem;
+}
+
+:root{
+  // Colors
+  --white: #ffffff;
+  --gray: #808080;
+
+  --blue-700: #1C2632;
+  --blue-900: #131A21;
+
+  --purple-500: #7A84FF;
+
+  // Texts
+  --2xl: 2rem; 
+  --xl: 1.5rem;
+  --lg: 1rem;
+  --md: 0.875rem;
+  --sm: 0.75rem;
+
+  // gradient
+  --background: linear-gradient(116.97deg, #26484F 0%, #292448 100.21%);
+
+}
+
+span{
+  font-weight: 700;
+  font-size: var(--2xl);
+}
+
+h1{
+  font-weight: 700;
+  font-size: var(--xl); 
+}
+
+h2{
+  font-weight: 500;
+  font-size: var(--lg);
+} 
+
+h6{
+  font-weight: 500;
+  font-size: var(--sm);
+}
+
+label{
+  font-weight: 500;
+  font-size: var(--md);
+}
+
+p{
+  font-weight: 400;
+  font-size: var(--md);
+}
+
+a{
+  font-weight: 500;
+}
+
+button{
+  font-weight: 500;
+  font-size: var(--lg);
+}
+
+// Responsive
+
+@media screen and (max-width: 470px) {
+  html{
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  html{
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  html{
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  html{
+    font-size: 60%;
+  }
+}
