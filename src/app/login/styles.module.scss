@@ -1,0 +1,62 @@
+.login{
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  .hero{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    text-align: center;
+    background: var(--blue-700);
+    border-radius: 0px 1.625rem 1.625rem 0px;
+
+    padding: 0 2rem;
+  }
+  .hero2{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 1rem;
+
+    img{
+      max-width: 100%;
+    }
+
+    span{
+      width: 24.375rem;
+      max-width: 100%;
+
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .login{
+    flex-direction: column;
+    justify-content: start;
+    gap: 4rem;
+
+    .hero{
+      padding: 2rem;
+      border-radius: 0px 0px 26px 26px;
+
+      img{
+        width: 70px;
+        height: auto;
+      }
+    }
+  }  
+}
