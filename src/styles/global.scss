@@ -32,6 +32,9 @@ body{
 
   --purple-500: #7A84FF;
 
+  --red-500: #F82D2D;
+  --green-500: #6DE435;
+
   // Texts
   --2xl: 2rem; 
   --xl: 1.5rem;
@@ -42,6 +45,10 @@ body{
   // gradient
   --background: linear-gradient(116.97deg, #26484F 0%, #292448 100.21%);
 
+  // shadow
+  --shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 span{
@@ -59,6 +66,11 @@ h2{
   font-size: var(--lg);
 } 
 
+h3{
+  font-weight: 500;
+  font-size: var(--md);
+}
+
 h6{
   font-weight: 500;
   font-size: var(--sm);
@@ -71,7 +83,7 @@ label{
 
 p{
   font-weight: 400;
-  font-size: var(--md);
+  font-size: var(--lg);
 }
 
 a{
@@ -106,5 +118,17 @@ button{
 @media screen and (max-width: 270px) {
   html{
     font-size: 60%;
+  }
+}
+
+@media screen and (max-height: 924px){
+  html{
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-height: 740px){
+  html{
+    font-size: 80%;
   }
 }

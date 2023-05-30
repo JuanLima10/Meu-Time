@@ -1,0 +1,48 @@
+.root {
+  width: 100%;
+  max-width: 49.75rem;
+  height: 39.25rem;
+
+  background: var(--blue-700);
+  border-radius: 0.625rem;
+  box-shadow: var(--shadow);
+
+  .list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem 2rem 0rem;
+
+    .trigger {
+      cursor: pointer;
+
+      border: none;
+      background: transparent;
+
+      font-weight: 500;
+      font-size: var(--lg);
+
+      transition: all .4s;
+      padding: 1rem;
+      margin-bottom: -0.1rem;
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+        color: var(--purple-500);
+      }
+
+      &[data-state='active'] {
+        color: var(--purple-500);
+        border-bottom: 2px solid var(--purple-500);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1185px) {
+  .root {
+    height: auto;
+    margin: 0 2rem;
+  }
+}

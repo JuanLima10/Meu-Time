@@ -1,5 +1,6 @@
-import { SelectHTMLAttributes } from "react";
+import { SelectHTMLAttributes } from 'react'
 
 export interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement>{
-    label?: string;
+    label?: string
+    title: string
 }
