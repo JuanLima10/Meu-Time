@@ -1,0 +1,25 @@
+.graphic{
+  width: 26.5625rem;
+  max-width: 100%;
+  height: 20.1875rem;
+
+  background: var(--blue-900);
+  border-radius: 0.625rem;
+
+  padding: 1rem;
+
+  h2{
+    margin-bottom: 2rem;
+  }
+
+  .graph{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 835px){
+  .graphic{
+    width: 100%;
+    height: auto;
+  }
+}

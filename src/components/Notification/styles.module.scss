@@ -1,0 +1,26 @@
+.notification{
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    text-align: center;
+
+    a{
+      font-weight: 500;
+      font-size: var(--md);
+      text-decoration: none;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}

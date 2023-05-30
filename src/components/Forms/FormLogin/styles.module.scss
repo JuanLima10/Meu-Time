@@ -1,0 +1,19 @@
+.form{
+  width: 24.375rem;
+  max-width: 100%;
+  position: relative;
+
+  h6{
+    text-align: end;
+    margin-bottom: 2rem;
+
+    a{
+      color: var(--purple-500);
+    }
+  }
+
+  button{
+    position: absolute;
+    right: 0;
+  }
+}

@@ -1,0 +1,48 @@
+.card{
+  width: 100%;
+  
+  background: var(--blue-900);
+  border-radius: 0.625rem;
+
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+
+  h2{
+    &:nth-child(1){
+      font-weight: 700;
+    }
+  }
+
+  strong {
+    font-weight: 400;
+    font-size: var(--lg);
+
+    &:nth-child(1) {
+      color: var(--green-500);
+    }
+
+    &:nth-child(2) {
+      color: var(--gray);
+    }
+
+    &:nth-child(3) {
+      color: var(--red-500);
+    }
+  }
+
+  h3{
+    margin: 0.5rem 0;
+
+    small{
+      font-weight: 700;
+      font-size: var(--sm);
+      margin-left: 0.5rem;
+
+      color: var(--blue-900);
+
+      background: var(--purple-500);
+      border-radius: 0.625rem;
+
+      padding: 0.25rem 0.5rem;
+    }
+  }
+}
