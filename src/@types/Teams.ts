@@ -1,10 +1,6 @@
 import { StatsProps } from './Stats'
 
 export interface TeamsProps{
-  params: {
-    league_id: string
-    team_id: string
-  }
   id: string
   name: string
   code: string
@@ -13,6 +9,13 @@ export interface TeamsProps{
   national: boolean
   logo: string
   venue: VenuesProps
+}
+
+export interface TeamsParamsProps {
+  params: {
+    league_id: string
+    team_id: string
+  }
 }
 
 export interface TeamsComponentProps {
