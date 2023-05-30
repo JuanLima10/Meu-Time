@@ -1,8 +1,6 @@
-import Style from './styles.module.scss'
+import { CardsProps } from '@/@types/Card'
 
-interface CardsProps {
-  children: any
-}
+import Style from './styles.module.scss'
 
 export function Card(props: CardsProps){
   return (
