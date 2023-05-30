@@ -1,3 +1,5 @@
+import { StatsProps } from './Stats'
+
 export interface TeamsProps{
   id: string
   name: string
@@ -17,9 +19,9 @@ export interface TeamsParamsProps {
 }
 
 export interface TeamsComponentProps {
-  team: string
+  team: TeamsProps
   cookie?: string
-  league?: string
+  league: StatsProps
   venue: VenuesProps
 }
 
