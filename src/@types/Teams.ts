@@ -1,8 +1,4 @@
 export interface TeamsProps{
-  params: {
-    league_id: string
-    team_id: string
-  }
   id: string
   name: string
   code: string
@@ -13,10 +9,17 @@ export interface TeamsProps{
   venue: VenuesProps
 }
 
+export interface TeamsParamsProps {
+  params: {
+    league_id: string
+    team_id: string
+  }
+}
+
 export interface TeamsComponentProps {
-  team: any
+  team: string
   cookie?: string
-  league?: any
+  league?: string
   venue: VenuesProps
 }
 
