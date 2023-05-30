@@ -1,7 +1,6 @@
 import { cookies } from 'next/headers'
 import Link from 'next/link'
 
-import { TeamsProps } from '@/@types/Teams'
 
 import { Navbar } from '@/components/Navbar'
 import { Notification } from '@/components/Notification'
@@ -9,9 +8,11 @@ import { Header } from '@/components/Team/Header'
 import { Info } from '@/components/Team/Info'
 import { Players } from '@/components/Team/Players'
 
+import { TeamsParamsProps } from '@/@types/Teams'
+
 import Style from './styles.module.scss'
 
-export default function Team({ params }: TeamsProps) {
+export default function Team({ params }: TeamsParamsProps) {
   const cookie = cookies().get('MT_session')?.value
 
   if (!cookie) {
