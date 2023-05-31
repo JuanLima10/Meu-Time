@@ -1,5 +1,5 @@
 export const getData = async (url: string, cookie: string) =>{
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/${url}`, {
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}${url}`, {
     next: {
       revalidate: 86400,
     },
